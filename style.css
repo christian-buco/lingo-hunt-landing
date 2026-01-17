@@ -84,3 +84,13 @@ body {
     color: #bdbdbd;
   }
   
+  /* Logo */
+.logo {
+    width: 120px;        /* scales down from 512px to fit nicely */
+    height: 120px;       /* keep square */
+    margin: 0 auto 1rem; /* center and spacing below */
+    display: block;
+    border-radius: 16px; /* optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle depth */
+  }
+  

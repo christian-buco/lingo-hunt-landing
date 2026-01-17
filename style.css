@@ -1,0 +1,86 @@
+/* style.css */
+
+/* BODY & LAYOUT */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #4b4b4b;
+    color: #f5f5f5;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 420px;
+    padding: 2.5rem;
+  }
+  
+  /* HEADINGS */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #d6d6d6;
+  }
+  
+  /* FORM */
+  form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  
+  input[type="email"] {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    background: #a4a4a4;
+    color: #1f1f1f;
+  }
+  
+  input::placeholder {
+    color: #3f3f3f;
+  }
+  
+  /* BUTTON */
+  button {
+    background: #8080ff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  
+  button:hover {
+    background: #6f6ff2;
+    transform: translateY(-1px);
+  }
+  
+  /* SUCCESS MESSAGE */
+  #status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #80ff80;
+  }
+  
+  /* SMALL FOOTNOTE */
+  small {
+    display: block;
+    margin-top: 1.25rem;
+    color: #bdbdbd;
+  }
+  

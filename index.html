@@ -1,0 +1,55 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lingo Hunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lingo Hunt</h1>
+    <p>Learn languages by finding them in the real world.</p>
+
+    <form id="signup-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="6168a9a7-7a64-4298-baf9-d01925b48ffa">
+      <input type="hidden" name="subject" value="New Lingo Hunt Signup">
+      <input type="hidden" name="from_name" value="Lingo Hunt">
+
+      <input type="email" name="email" placeholder="Email address" required />
+      
+      <!-- Simple spam protection -->
+      <input type="checkbox" name="botcheck" style="display:none">
+
+      <button type="submit">Join</button>
+    </form>
+
+    <!-- Status message -->
+    <div id="status"></div>
+
+    <small>Early access coming soon. No spam.</small>
+  </div>
+
+  <!-- Web3Forms client script -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <!-- Inline success message -->
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // stop default form submit
+
+      // Use Web3Forms JS to send form
+      web3forms.submit(this)
+        .then(function() {
+          document.getElementById("status").innerText = "Thanks for joining the hunt!";
+          document.getElementById("signup-form").reset();
+        })
+        .catch(function() {
+          document.getElementById("status").innerText = "Something went wrong. Try again.";
+        });
+    });
+  </script>
+</body>
+</html>

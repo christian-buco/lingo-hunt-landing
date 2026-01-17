@@ -92,5 +92,6 @@ body {
     display: block;
     border-radius: 16px; /* optional rounded corners */
     box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle depth */
+    object-fit: contain; /* ensures the image keeps aspect ratio */
   }
   
